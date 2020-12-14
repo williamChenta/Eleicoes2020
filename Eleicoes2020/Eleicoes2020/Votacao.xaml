@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Eleicoes2020.Votacao" Padding="5" Title="Tela de votação">
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+
+
+            <CollectionView x:Name="lstCandidatos">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+
+                            <Label Text="{Binding nome}" Grid.Column="0" Grid.Row="0"/>
+                            <Label Text="{Binding partido.nome}" Grid.Column="0" Grid.Row="1"/>
+                            <Button Text="Votar" Grid.Column="1" Grid.Row="0" Grid.RowSpan="2" 
+                                    BackgroundColor="#34a853" TextColor="WhiteSmoke" 
+                                    VerticalOptions="Center" Clicked="Votar" CommandParameter="{Binding numero}"/>
+                        </Grid>
+
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
