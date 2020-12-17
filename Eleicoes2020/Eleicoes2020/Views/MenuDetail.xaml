@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Eleicoes2020.Views.MenuDetail">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="https://s2.glbimg.com/ZdgOCkv5cFDj04spQChZSEbQO9I=/0x0:1000x558/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2020/B/P/jaRhWzTMKr4wGK9BnaOA/selo3.jpg" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

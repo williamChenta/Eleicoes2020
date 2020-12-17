@@ -50,6 +50,7 @@ namespace Eleicoes2020
                 numero = int.Parse(txtNumero.Text),
                 nome = txtNome.Text,
                 partido = (Partido)cmbPartidos.SelectedItem,
+                foto = txtFoto.Text,
                 qtdeVotos = 0
             };
 

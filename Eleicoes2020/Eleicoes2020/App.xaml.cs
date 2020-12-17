@@ -13,7 +13,7 @@ namespace Eleicoes2020
         public App()
         {
             InitializeComponent();
-            MainPage = new NavigationPage(new MainPage());
+            MainPage = new Eleicoes2020.Views.Menu();
         }
 
         protected override void OnStart()

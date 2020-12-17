@@ -9,6 +9,7 @@ namespace Eleicoes2020.Models
         public int numero { get; set; }
         public string nome { get; set; }
         public Partido partido { get; set; }
+        public string foto { get; set; }
         public int qtdeVotos { get; set; }
     }
 }
